@@ -8,10 +8,11 @@ const GRAVITY := 25
 var velocity := Vector2()
 
 onready var player_sprite = $AnimatedSprite
+onready var player_cam = $PlayerCam
 
 
 func _ready():
-	pass # Replace with function body.
+	player_cam.offset = Vector2(640,0)
 
 
 func _physics_process(delta):
