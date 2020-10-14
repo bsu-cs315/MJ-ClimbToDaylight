@@ -1,14 +1,27 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://project/assets/NicePng_shelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/Shelf.png" type="Texture" id=2]
 [ext_resource path="res://project/src/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://project/assets/100_furniture_sprites_by_neoriceisgood_d6p5tfo.png" type="Texture" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 12.1837, 64, 12.0474 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 12.0474, 32, 12.0474, 32, 17.35, 0, 17.6291 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 63, 0, 63, 52, 0, 52 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 44.2153, 19.7284, 14.7979, 19.7284, 14.7979, 4.77853, 44.2153, 4.77853 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 63.6451, 53.1751, 1.43445, 53.1751, 1.43445, 25.2045, 63.6451, 25.2045 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 38, 0, 38, 18, 0, 18 )
 
 [sub_resource type="TileSet" id=1]
 0/name = "NicePng_shelf.png 0"
@@ -53,6 +66,90 @@ points = PoolVector2Array( 0, 12.0474, 32, 12.0474, 32, 17.35, 0, 17.6291 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
+2/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 2"
+2/texture = ExtResource( 4 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 1, 2, 63, 52 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 4 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 3"
+3/texture = ExtResource( 4 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 512, 32, 64, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 5 )
+3/shape_one_way = true
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": true,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 4"
+4/texture = ExtResource( 4 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 576, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 6 )
+4/shape_one_way = true
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": true,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 5"
+5/texture = ExtResource( 4 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 76, 89, 38, 18 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 7 )
+5/shape_one_way = true
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": true,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
 
 [node name="Level-1" type="Node2D"]
 
@@ -61,9 +158,8 @@ format = 1
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
-cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917516, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1179665, 1, 0, 1376256, 0, 0, 1376258, 0, 0, 1376260, 0, 0, 1376262, 0, 0, 1376264, 0, 0, 1376266, 0, 0, 1376268, 0, 0, 1376270, 0, 0, 1376272, 0, 0, 1376274, 0, 0 )
+tile_data = PoolIntArray( 458757, 4, 0, 524290, 4, 0, 655360, 2, 0, 655361, 2, 0, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 0, 655368, 2, 0, 655369, 2, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 90.9051, 631.763 )
+position = Vector2( 31.9051, 590.763 )
