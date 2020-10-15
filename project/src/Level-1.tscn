@@ -1,31 +1,18 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://project/assets/NicePng_shelf.png" type="Texture" id=1]
-[ext_resource path="res://project/assets/Shelf.png" type="Texture" id=2]
+[ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
+[ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
 [ext_resource path="res://project/src/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://project/assets/100_furniture_sprites_by_neoriceisgood_d6p5tfo.png" type="Texture" id=4]
 [ext_resource path="res://project/assets/Cupboard1.png" type="Texture" id=5]
 [ext_resource path="res://project/assets/Couch.png" type="Texture" id=6]
 [ext_resource path="res://project/assets/SmallTable.png" type="Texture" id=7]
 [ext_resource path="res://project/src/Level-1.gd" type="Script" id=8]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 64, 64, 0, 64, 0, 12.1837, 64, 12.0474 )
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 160, 0, 160, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 0, 12.0474, 32, 12.0474, 32, 17.35, 0, 17.6291 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 0, 0, 63, 0, 63, 52, 0, 52 )
-
-[sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 44.2153, 19.7284, 14.7979, 19.7284, 14.7979, 4.77853, 44.2153, 4.77853 )
-
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 63.6451, 53.1751, 1.43445, 53.1751, 1.43445, 25.2045, 63.6451, 25.2045 )
-
-[sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 38, 0, 38, 18, 0, 18 )
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 41.1249, 64, 41.1249, 64, 64, 0, 64 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 0, 0, 96, 0, 96, 64, 0, 64 )
@@ -40,132 +27,6 @@ points = PoolVector2Array( 0, 8.02783, 128, 8.02783, 128, 64, 0, 64 )
 points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 
 [sub_resource type="TileSet" id=11]
-0/name = "NicePng_shelf.png 0"
-0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 64, 64 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 1 )
-0/shape_one_way = false
-0/shape_one_way_margin = 1.0
-0/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 1 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-0/z_index = 0
-1/name = "Shelf.png 1"
-1/texture = ExtResource( 2 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 0, 0, 32, 32 )
-1/tile_mode = 0
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 2 )
-1/shape_one_way = false
-1/shape_one_way_margin = 1.0
-1/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 2 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-1/z_index = 0
-2/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 2"
-2/texture = ExtResource( 4 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 1, 2, 63, 52 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 3 )
-2/shape_one_way = false
-2/shape_one_way_margin = 1.0
-2/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 3 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-2/z_index = 0
-3/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 3"
-3/texture = ExtResource( 4 )
-3/tex_offset = Vector2( 0, 0 )
-3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 512, 32, 64, 32 )
-3/tile_mode = 0
-3/occluder_offset = Vector2( 0, 0 )
-3/navigation_offset = Vector2( 0, 0 )
-3/shape_offset = Vector2( 0, 0 )
-3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 4 )
-3/shape_one_way = true
-3/shape_one_way_margin = 1.0
-3/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": true,
-"one_way_margin": 1.0,
-"shape": SubResource( 4 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-3/z_index = 0
-4/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 4"
-4/texture = ExtResource( 4 )
-4/tex_offset = Vector2( 0, 0 )
-4/modulate = Color( 1, 1, 1, 1 )
-4/region = Rect2( 576, 0, 64, 64 )
-4/tile_mode = 0
-4/occluder_offset = Vector2( 0, 0 )
-4/navigation_offset = Vector2( 0, 0 )
-4/shape_offset = Vector2( 0, 0 )
-4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 5 )
-4/shape_one_way = true
-4/shape_one_way_margin = 1.0
-4/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": true,
-"one_way_margin": 1.0,
-"shape": SubResource( 5 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-4/z_index = 0
-5/name = "100_furniture_sprites_by_neoriceisgood_d6p5tfo.png 5"
-5/texture = ExtResource( 4 )
-5/tex_offset = Vector2( 0, 0 )
-5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 76, 89, 38, 18 )
-5/tile_mode = 0
-5/occluder_offset = Vector2( 0, 0 )
-5/navigation_offset = Vector2( 0, 0 )
-5/shape_offset = Vector2( 0, 0 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 6 )
-5/shape_one_way = true
-5/shape_one_way_margin = 1.0
-5/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": true,
-"one_way_margin": 1.0,
-"shape": SubResource( 6 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-5/z_index = 0
 6/name = "Cupboard1.png 6"
 6/texture = ExtResource( 5 )
 6/tex_offset = Vector2( 0, 0 )
@@ -250,6 +111,65 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
+10/name = "woodTiles.png 10"
+10/texture = ExtResource( 2 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 160, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 12 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Bookshelf.png 11"
+11/texture = ExtResource( 1 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 64, 64, 64 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "Bookshelf.png 12"
+12/texture = ExtResource( 1 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 64, 64 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 13 )
+12/shape_one_way = true
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": true,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+
+[sub_resource type="SegmentShape2D" id=14]
+b = Vector2( 815.971, -0.225037 )
 
 [node name="Level-1" type="Node2D"]
 script = ExtResource( 8 )
@@ -260,10 +180,15 @@ format = 1
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 11 )
 format = 1
-tile_data = PoolIntArray( -393210, 9, 0, -262138, 9, 0, -131066, 9, 0, -65533, 8, 0, 65541, 8, 0, 65543, 9, 0, 131075, 9, 0, 196612, 9, 0, 327686, 9, 0, 393218, 8, 0, 458757, 9, 0, 524290, 8, 0, 589824, 7, 0, 589825, 7, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0, 589830, 7, 0, 589831, 7, 0, 589832, 7, 0, 589833, 7, 0, 655360, 6, 0, 655361, 6, 0, 655362, 6, 0, 655363, 6, 0, 655364, 6, 0, 655365, 6, 0, 655366, 6, 0, 655367, 6, 0, 655368, 6, 0, 655369, 6, 0 )
+tile_data = PoolIntArray( -393210, 9, 0, -327677, 8, 0, -262138, 9, 0, -196600, 8, 0, -131066, 9, 0, -65533, 8, 0, 65541, 8, 0, 65543, 9, 0, 131075, 9, 0, 196608, 8, 0, 196612, 9, 0, 262152, 8, 0, 327686, 9, 0, 393218, 8, 0, 458752, 9, 0, 458757, 9, 0, 524291, 12, 0, 524296, 7, 0, 589827, 11, 0, 589832, 6, 0, 655360, 10, 0, 655362, 10, 0, 655363, 10, 0, 655365, 10, 0, 655366, 10, 0, 655368, 10, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 38.64, 578.416 )
 
-[node name="SpawnPos" type="Position2D" parent="."]
-position = Vector2( 38.64, 578.416 )
+[node name="WinLine" type="Area2D" parent="."]
+position = Vector2( 0, -80 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinLine"]
+position = Vector2( -70.1634, -491.142 )
+shape = SubResource( 14 )
+[connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
