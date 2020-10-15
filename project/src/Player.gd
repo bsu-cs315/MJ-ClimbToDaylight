@@ -15,13 +15,15 @@ func _ready():
 	player_cam.offset = Vector2(640, -240)
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.y += GRAVITY
 	
 	if Input.is_action_pressed("move_right"):
 		velocity.x = RUN_SPEED
+		player_sprite.flip_h = false
 	elif Input.is_action_pressed("move_left"):
 		velocity.x = -RUN_SPEED
+		player_sprite.flip_h = true
 	else:
 		velocity.x = 0
 	
@@ -37,8 +39,6 @@ func determine_animation():
 		player_sprite.animation = "run" if abs(velocity.x) > 0 else "idle"
 	else:
 		player_sprite.animation = "idle" if velocity.y > 0 else "jump"
-	
-	player_sprite.flip_h = true if velocity.x < 0 else false
 	
 	if velocity != Vector2.ZERO:
 		player_sprite.play()
