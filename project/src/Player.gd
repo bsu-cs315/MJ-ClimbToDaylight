@@ -7,8 +7,9 @@ const GRAVITY := 25
 
 var velocity := Vector2()
 
-onready var player_sprite = $AnimatedSprite
-onready var player_cam = $PlayerCam setget , player_cam
+onready var player_sprite := $AnimatedSprite
+onready var player_cam := $PlayerCam setget , player_cam
+onready var screen_size := get_viewport_rect().size
 
 
 func _ready():
@@ -31,6 +32,7 @@ func _physics_process(_delta):
 		velocity.y = JUMP_SPEED
 	
 	determine_animation()
+	position.x = wrapf(position.x, 0, screen_size.x)
 	velocity = move_and_slide(velocity, Vector2.UP)
 
 
