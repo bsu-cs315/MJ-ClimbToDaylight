@@ -1,12 +1,116 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
 [ext_resource path="res://project/src/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://project/assets/CrackedMirror.png" type="Texture" id=4]
 [ext_resource path="res://project/assets/Cupboard1.png" type="Texture" id=5]
 [ext_resource path="res://project/assets/Couch.png" type="Texture" id=6]
 [ext_resource path="res://project/assets/SmallTable.png" type="Texture" id=7]
 [ext_resource path="res://project/src/Level-1.gd" type="Script" id=8]
+[ext_resource path="res://project/assets/Apple+TreePaint.png" type="Texture" id=9]
+[ext_resource path="res://project/assets/HairPaint.png" type="Texture" id=10]
+[ext_resource path="res://project/assets/PathPaint.png" type="Texture" id=11]
+
+[sub_resource type="TileSet" id=15]
+5/name = "HairPaint.png 5"
+5/texture = ExtResource( 10 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 0, 96, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "HairPaint.png 6"
+6/texture = ExtResource( 10 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 32, 64, 96, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Apple+TreePaint.png 7"
+7/texture = ExtResource( 9 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "CrackedMirror.png 8"
+8/texture = ExtResource( 4 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 64, 64 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "CrackedMirror.png 9"
+9/texture = ExtResource( 4 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 32, 64, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "CrackedMirror.png 10"
+10/texture = ExtResource( 4 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 64, 64, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "PathPaint.png 11"
+11/texture = ExtResource( 11 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 64, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 0, 0, 160, 0, 160, 64, 0, 64 )
@@ -174,13 +278,24 @@ b = Vector2( 815.971, -0.225037 )
 [node name="Level-1" type="Node2D"]
 script = ExtResource( 8 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = -621.0
+margin_right = 640.0
+margin_bottom = 704.0
+color = Color( 0.439216, 0.415686, 0.411765, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Background" type="TileMap" parent="."]
+tile_set = SubResource( 15 )
 format = 1
+tile_data = PoolIntArray( -458751, 8, 0, -393215, 9, 0, -131068, 11, 0, 65538, 7, 0, 65544, 5, 0, 131080, 6, 0, 262146, 8, 0, 327682, 10, 0, 524290, 7, 0 )
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 11 )
 format = 1
-tile_data = PoolIntArray( -393210, 9, 0, -327677, 8, 0, -262138, 9, 0, -196600, 8, 0, -131066, 9, 0, -65533, 8, 0, 65541, 8, 0, 65543, 9, 0, 131075, 9, 0, 196608, 8, 0, 196612, 9, 0, 262152, 8, 0, 327686, 9, 0, 393218, 8, 0, 458752, 9, 0, 458757, 9, 0, 524291, 12, 0, 524296, 7, 0, 589827, 11, 0, 589832, 6, 0, 655360, 10, 0, 655362, 10, 0, 655363, 10, 0, 655365, 10, 0, 655366, 10, 0, 655368, 10, 0 )
+tile_data = PoolIntArray( -458746, 9, 0, -393211, 9, 0, -327677, 8, 0, -262138, 9, 0, -196600, 8, 0, -131066, 9, 0, -65533, 8, 0, 65541, 8, 0, 65543, 9, 0, 131075, 9, 0, 196608, 8, 0, 196612, 9, 0, 262152, 8, 0, 327686, 9, 0, 393218, 8, 0, 458752, 9, 0, 458757, 9, 0, 524291, 12, 0, 524296, 7, 0, 589827, 11, 0, 589832, 6, 0, 655360, 10, 0, 655362, 10, 0, 655363, 10, 0, 655365, 10, 0, 655366, 10, 0, 655368, 10, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 38.64, 578.416 )

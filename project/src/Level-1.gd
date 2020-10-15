@@ -2,7 +2,6 @@ extends Node2D
 
 
 onready var player = $Player
-onready var spawn_pos = $SpawnPos
 
 
 func _ready():
