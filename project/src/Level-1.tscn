@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -283,6 +283,9 @@ font_data = ExtResource( 12 )
 [sub_resource type="DynamicFont" id=17]
 font_data = ExtResource( 12 )
 
+[sub_resource type="DynamicFont" id=18]
+font_data = ExtResource( 12 )
+
 [node name="Level-1" type="Node2D"]
 script = ExtResource( 8 )
 
@@ -348,5 +351,40 @@ margin_right = 238.0
 margin_bottom = 28.0
 custom_fonts/font = SubResource( 17 )
 text = "Try Again"
+
+[node name="WinHUD" type="MarginContainer" parent="."]
+visible = false
+margin_left = 63.0
+margin_top = 240.0
+margin_right = 584.0
+margin_bottom = 337.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WinHUD"]
+margin_right = 521.0
+margin_bottom = 97.0
+
+[node name="WinLabel" type="Label" parent="WinHUD/VBoxContainer"]
+margin_right = 521.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 0, 0.74902, 0.027451, 1 )
+text = "LEVEL CLEARED"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WinHUD/VBoxContainer"]
+margin_top = 69.0
+margin_right = 521.0
+margin_bottom = 97.0
+alignment = 1
+
+[node name="NextLevelButton" type="Button" parent="WinHUD/VBoxContainer/HBoxContainer"]
+margin_left = 193.0
+margin_right = 328.0
+margin_bottom = 28.0
+custom_fonts/font = SubResource( 18 )
+text = "Next Level"
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
+[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/NextLevelButton" to="." method="_on_NextLevelButton_pressed"]

@@ -2,7 +2,7 @@ extends Node2D
 
 
 onready var player := $Player
-onready var win_hud
+onready var win_hud := $WinHUD
 onready var game_over_hud := $GameOverHUD
 
 
@@ -12,12 +12,13 @@ func kill_player():
 
 
 func win_player():
-	print("win")
+	player.queue_free()
+	set_correct_hud("win")
 
 
 func set_correct_hud(player_condition):
 	if player_condition == "win":
-		pass
+		win_hud.visible = true
 	elif player_condition == "dead":
 		game_over_hud.visible = true
 
@@ -35,3 +36,7 @@ func _on_WinLine_body_shape_entered(body_id, _body, _body_shape, _area_shape):
 
 func _on_RetryButton_pressed():
 	var _ignored = get_tree().reload_current_scene()
+
+
+func _on_NextLevelButton_pressed():
+	pass
