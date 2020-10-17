@@ -20,8 +20,19 @@ A midsemester game jam for CS 315
 - [ ] A-1: The game includes a complete traditional player experience loop&mdash;title, gameplay, and ending&mdash;and the player has the option to play again.
 
 ## Third-Party Assets:
+Sprites:
+
 `2D Game Zombie Character` sprite pack licensed free for use (https://craftpix.net/file-licenses/). Source: https://craftpix.net/freebies/2d-game-zombie-character-free-sprite-pack-1/
 
 `100 furniture sprites` sprite set licensed "Free for non-commercial use". Source: https://www.deviantart.com/neoriceisgood/art/100-furniture-sprites-405058884
 
 `Pixel art wood planks` tilset licensed under [Attribution 4.0 Iternational (CC by 4.0)](https://creativecommons.org/licenses/by/4.0/). Source: https://ipixl.itch.io/pixel-art-wood-planks-tileset
+
+<br>
+Fonts:
+
+`Retro Computer` font licensed "Free for Personal Use". Source: https://www.dafont.com/retro-computer.font
+
+`Creepster` font licensed under [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL). Source: https://www.1001fonts.com/creepster-font.html#more
+
+<br>
