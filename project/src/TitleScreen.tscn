@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://project/assets/fonts/Creepster-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://project/src/TitleScreen.gd" type="Script" id=2]
+[ext_resource path="res://project/assets/fonts/retro_computer_personal_use.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -20,6 +21,9 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=4]
 size = 30
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 3 )
 
 [node name="TitleScreen" type="Node2D"]
 script = ExtResource( 2 )
@@ -101,5 +105,18 @@ Up to jump
 
 Get to the top!"
 align = 1
+
+[node name="BonusLevelButton" type="Button" parent="."]
+margin_left = 475.203
+margin_top = 659.411
+margin_right = 626.203
+margin_bottom = 687.411
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.760784, 0.760784, 0.760784, 1 )
+text = "Bonus Level!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Buttons/HBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Buttons/HBoxContainer/InstructionsButton" to="." method="_on_InstructionsButton_pressed"]
+[connection signal="pressed" from="BonusLevelButton" to="." method="_on_BonusLevelButton_pressed"]
