@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://project/assets/Altar.png" type="Texture" id=18]
 [ext_resource path="res://project/assets/MirrorDresser.png" type="Texture" id=19]
 [ext_resource path="res://project/src/PausePopup.tscn" type="PackedScene" id=20]
+[ext_resource path="res://project/assets/sounds/spook_loop.ogg" type="AudioStream" id=21]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.283871, 0.580645, 0.870968 )
@@ -593,6 +594,11 @@ position = Vector2( 0, -624 )
 rotation = -1.55319e-05
 
 [node name="PausePopup" parent="." instance=ExtResource( 20 )]
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+volume_db = -10.0
+autoplay = true
 [connection signal="hit" from="Player" to="." method="_on_Player_hit"]
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]

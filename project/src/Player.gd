@@ -11,6 +11,7 @@ var velocity := Vector2()
 
 onready var player_sprite := $AnimatedSprite
 onready var player_cam := $PlayerCam setget , player_cam
+onready var hop_player := $HopPlayer
 onready var screen_size := get_viewport_rect().size
 
 onready var player_area_shape := $PlayerArea/PlayerAreaShape
@@ -34,6 +35,7 @@ func _physics_process(_delta):
 	
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y = JUMP_SPEED
+		hop_player.play()
 	
 	determine_animation()
 	position.x = wrapf(position.x, 0, screen_size.x)

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/spook_loop.ogg-a34088d1f27edd8d1ff4247e7d8565ce.oggstr"
+
+[deps]
+
+source_file="res://project/assets/sounds/spook_loop.ogg"
+dest_files=[ "res://.import/spook_loop.ogg-a34088d1f27edd8d1ff4247e7d8565ce.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

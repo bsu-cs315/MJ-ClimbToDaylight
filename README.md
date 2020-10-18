@@ -43,3 +43,8 @@ Fonts:
 `CryptCreep` font licensed "Free for Personal Use". Source: https://www.1001fonts.com/cryptcreep-font.html
 
 <br>
+Sounds:
+
+`Jump Hop` sound licensed under [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/). Source: https://freesound.org/people/felixyadomi/sounds/456373/
+
+`Spook` loop licensed under [Creative Common Zero (CCO)](https://creativecommons.org/publicdomain/zero/1.0/). Source: https://freesound.org/people/wi-photos/sounds/505664/

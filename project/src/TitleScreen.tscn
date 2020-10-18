@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://project/assets/fonts/Creepster-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://project/src/TitleScreen.gd" type="Script" id=2]
 [ext_resource path="res://project/assets/fonts/retro_computer_personal_use.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://project/assets/sounds/spook_loop.ogg" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -117,6 +118,11 @@ text = "Bonus Level!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+autoplay = true
 [connection signal="pressed" from="Buttons/HBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Buttons/HBoxContainer/InstructionsButton" to="." method="_on_InstructionsButton_pressed"]
 [connection signal="pressed" from="BonusLevelButton" to="." method="_on_BonusLevelButton_pressed"]
