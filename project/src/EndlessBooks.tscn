@@ -7,7 +7,7 @@
 [ext_resource path="res://project/assets/Cupboard1.png" type="Texture" id=5]
 [ext_resource path="res://project/assets/Couch.png" type="Texture" id=6]
 [ext_resource path="res://project/assets/SmallTable.png" type="Texture" id=7]
-[ext_resource path="res://project/src/Level-2.gd" type="Script" id=8]
+[ext_resource path="res://project/src/EndlessBooks.gd" type="Script" id=8]
 [ext_resource path="res://project/assets/Apple+TreePaint.png" type="Texture" id=9]
 [ext_resource path="res://project/assets/HairPaint.png" type="Texture" id=10]
 [ext_resource path="res://project/assets/PathPaint.png" type="Texture" id=11]
@@ -305,7 +305,7 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 0, -624, 0, 0, 0, 0, 256, -624, 0, 0, 0, 0, 384, -624, 0, 0, 0, 0, 640, -624, 0, 0, 0, 0, 0, -624, 0, 0, 0, 0, 437.539, -624.214 )
 }
 
-[node name="Level-2" type="Node2D"]
+[node name="EndlessBooks" type="Node2D"]
 script = ExtResource( 8 )
 Book = ExtResource( 14 )
 
@@ -325,13 +325,14 @@ format = 1
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
+collision_layer = 3
+collision_mask = 3
 format = 1
 tile_data = PoolIntArray( 655360, 8, 0, 655362, 8, 0, 655364, 8, 0, 655366, 8, 0, 655368, 8, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 54.7035, 599.36 )
-collision_layer = 3
-collision_mask = 2147483649
+position = Vector2( 38.64, 578.416 )
+collision_mask = 3
 
 [node name="IntroPopup" type="Popup" parent="."]
 margin_left = 154.597
@@ -442,7 +443,7 @@ custom_fonts/font = SubResource( 15 )
 text = "Back to Main Menu"
 
 [node name="BookTimer" type="Timer" parent="."]
-wait_time = 1.5
+wait_time = 0.5
 autostart = true
 
 [node name="BookPath" type="Path2D" parent="."]
@@ -452,7 +453,6 @@ curve = SubResource( 16 )
 [node name="BookSpawnLocation" type="PathFollow2D" parent="BookPath"]
 position = Vector2( 0, -624 )
 rotation = -1.55319e-05
-[connection signal="hit" from="Player" to="." method="_on_Player_hit"]
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]

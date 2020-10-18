@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
 
+signal hit(body_id)
+
 const RUN_SPEED := 150
 const JUMP_SPEED := -625
 const GRAVITY := 25
@@ -10,6 +12,8 @@ var velocity := Vector2()
 onready var player_sprite := $AnimatedSprite
 onready var player_cam := $PlayerCam setget , player_cam
 onready var screen_size := get_viewport_rect().size
+
+onready var player_area_shape := $PlayerArea/PlayerAreaShape
 
 
 func _ready():
@@ -48,3 +52,7 @@ func determine_animation():
 
 func player_cam():
 	return player_cam
+
+
+func _on_PlayerArea_body_shape_entered(body_id, _body, _body_shape, _area_shape):
+	emit_signal("hit", body_id)

@@ -26,7 +26,9 @@ Sprites:
 
 `100 furniture sprites` sprite set licensed "Free for non-commercial use". Source: https://www.deviantart.com/neoriceisgood/art/100-furniture-sprites-405058884
 
-`Pixel art wood planks` tilset licensed under [Attribution 4.0 Iternational (CC by 4.0)](https://creativecommons.org/licenses/by/4.0/). Source: https://ipixl.itch.io/pixel-art-wood-planks-tileset
+`Pixel art wood planks` tilset licensed under [Attribution 4.0 Iternational (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Source: https://ipixl.itch.io/pixel-art-wood-planks-tileset
+
+`Book Animation` sprite set licensed under [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/). Source: https://opengameart.org/content/book-animation
 
 <br>
 Fonts:

@@ -11,7 +11,6 @@ onready var intro_popup := $IntroPopup
 onready var book_spawn := $BookPath/BookSpawnLocation
 
 export (PackedScene) var Book
-var book_body_ids := []
 
 
 func _ready():
@@ -61,14 +60,8 @@ func _on_MainMenuButton_pressed():
 func _on_BookTimer_timeout():
 	book_spawn.offset = randi()
 	var book = Book.instance()
-	book_body_ids.append(book.get_instance_id())
 	add_child(book)
 	
 	book.position = book_spawn.position
 	
 	book.linear_velocity = Vector2(0, rand_range(book.min_speed(), book.max_speed()))
-
-
-func _on_Player_hit(body_id):
-	if book_body_ids.has(body_id):
-		kill_player()
