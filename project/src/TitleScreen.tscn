@@ -81,16 +81,20 @@ custom_fonts/font = SubResource( 3 )
 text = "Instructions"
 
 [node name="InstructionsPopup" type="Popup" parent="."]
+visible = true
 margin_left = 205.565
 margin_top = 212.24
 margin_right = 245.565
 margin_bottom = 252.24
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PopupBackground" type="ColorRect" parent="InstructionsPopup"]
 margin_left = -10.0
 margin_top = -10.0
 margin_right = 237.0
-margin_bottom = 202.0
+margin_bottom = 237.0
 color = Color( 0.12549, 0.121569, 0.121569, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -103,6 +107,7 @@ custom_fonts/font = SubResource( 4 )
 text = "Instructions:
 Left/Right to move
 Up to jump
+Tab to pause
 
 Get to the top!"
 align = 1
