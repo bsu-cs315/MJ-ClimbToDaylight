@@ -2,7 +2,7 @@
 A midsemester game jam for CS 315
 
 ### GitHub Pages Web Release
-[The Climb to Daylight]()
+[The Climb to Daylight](https://bsu-cs315.github.io/MJ-ClimbToDaylight/)
 
 ## Project Report
 ### Reflection:

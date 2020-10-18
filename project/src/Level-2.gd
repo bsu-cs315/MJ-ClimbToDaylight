@@ -25,12 +25,12 @@ func _ready():
 
 
 func kill_player():
-	player.queue_free()
+	remove_child(player)
 	set_correct_hud("dead")
 
 
 func win_player():
-	player.queue_free()
+	remove_child(player)
 	set_correct_hud("win")
 
 
