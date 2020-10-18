@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://project/assets/Cabinet.png" type="Texture" id=17]
 [ext_resource path="res://project/assets/Altar.png" type="Texture" id=18]
 [ext_resource path="res://project/assets/MirrorDresser.png" type="Texture" id=19]
+[ext_resource path="res://project/src/PausePopup.tscn" type="PackedScene" id=20]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.283871, 0.580645, 0.870968 )
@@ -590,9 +591,13 @@ curve = SubResource( 16 )
 [node name="BookSpawnLocation" type="PathFollow2D" parent="BookPath"]
 position = Vector2( 0, -624 )
 rotation = -1.55319e-05
+
+[node name="PausePopup" parent="." instance=ExtResource( 20 )]
 [connection signal="hit" from="Player" to="." method="_on_Player_hit"]
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
-[connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
-[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/BacktoMainButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenu"]
+[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/BacktoMainButton" to="." method="_on_MainMenu"]
 [connection signal="timeout" from="BookTimer" to="." method="_on_BookTimer_timeout"]
+[connection signal="main_menu" from="PausePopup" to="." method="_on_MainMenu"]
+[connection signal="resume" from="PausePopup" to="." method="_on_Resume"]

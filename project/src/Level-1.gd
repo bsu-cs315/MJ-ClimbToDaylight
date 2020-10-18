@@ -58,6 +58,7 @@ func _on_RetryButton_pressed():
 
 func _on_MainMenu():
 	var _ignored = get_tree().change_scene(title_screen_path)
+	get_tree().paused = false
 
 
 func _on_NextLevelButton_pressed():

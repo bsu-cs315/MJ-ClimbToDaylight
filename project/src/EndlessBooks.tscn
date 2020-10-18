@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://project/assets/Apple+TreePaint.png" type="Texture" id=9]
 [ext_resource path="res://project/assets/HairPaint.png" type="Texture" id=10]
 [ext_resource path="res://project/assets/PathPaint.png" type="Texture" id=11]
+[ext_resource path="res://project/src/PausePopup.tscn" type="PackedScene" id=12]
 [ext_resource path="res://project/assets/fonts/CryptCreep BB_reg.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://project/src/Book.tscn" type="PackedScene" id=14]
 
@@ -353,4 +354,12 @@ curve = SubResource( 16 )
 [node name="BookSpawnLocation" type="PathFollow2D" parent="BookPath"]
 position = Vector2( 0, -624 )
 rotation = -1.55319e-05
+
+[node name="PausePopup" parent="." instance=ExtResource( 12 )]
+margin_left = 912.673
+margin_top = 578.24
+margin_right = 952.673
+margin_bottom = 618.24
 [connection signal="timeout" from="BookTimer" to="." method="_on_BookTimer_timeout"]
+[connection signal="main_menu" from="PausePopup" to="." method="_on_MainMenu"]
+[connection signal="resume" from="PausePopup" to="." method="_on_Resume"]
