@@ -1,5 +1,8 @@
-# Midsemester Jam: Spooky Quarantine
+# Midsemester Jam: The Climb to Daylight
 A midsemester game jam for CS 315
+
+### GitHub Pages Web Release
+[The Climb to Daylight]()
 
 ## Project Report
 ### Reflection:
