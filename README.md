@@ -35,4 +35,6 @@ Fonts:
 
 `Creepster` font licensed under [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL). Source: https://www.1001fonts.com/creepster-font.html#more
 
+`CryptCreep` font licensed "Free for Personal Use". Source: https://www.1001fonts.com/cryptcreep-font.html
+
 <br>

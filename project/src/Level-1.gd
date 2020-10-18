@@ -4,6 +4,13 @@ extends Node2D
 onready var player := $Player
 onready var win_hud := $WinHUD
 onready var game_over_hud := $GameOverHUD
+onready var intro_popup := $IntroPopup
+
+
+func _ready():
+	intro_popup.visible = true
+	yield(get_tree().create_timer(5.0), "timeout")
+	intro_popup.visible = false
 
 
 func kill_player():
