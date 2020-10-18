@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -7,21 +7,21 @@
 [ext_resource path="res://project/assets/Cupboard1.png" type="Texture" id=5]
 [ext_resource path="res://project/assets/Couch.png" type="Texture" id=6]
 [ext_resource path="res://project/assets/SmallTable.png" type="Texture" id=7]
-[ext_resource path="res://project/src/Level-1.gd" type="Script" id=8]
+[ext_resource path="res://project/src/Level-2.gd" type="Script" id=8]
 [ext_resource path="res://project/assets/Apple+TreePaint.png" type="Texture" id=9]
 [ext_resource path="res://project/assets/HairPaint.png" type="Texture" id=10]
 [ext_resource path="res://project/assets/PathPaint.png" type="Texture" id=11]
 [ext_resource path="res://project/assets/fonts/retro_computer_personal_use.ttf" type="DynamicFontData" id=12]
 [ext_resource path="res://project/assets/fonts/CryptCreep BB_reg.ttf" type="DynamicFontData" id=13]
 
-[sub_resource type="Gradient" id=19]
+[sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.283871, 0.580645, 0.870968 )
-colors = PoolColorArray( 0.0666667, 0.0666667, 0.0666667, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0705882, 0.0705882, 0.0705882, 1 )
+colors = PoolColorArray( 0.0666667, 0.0666667, 0.0666667, 1, 0.168627, 0.168627, 0.168627, 1, 0.317647, 0.317647, 0.317647, 1, 0.741176, 0.741176, 0.741176, 1 )
 
-[sub_resource type="GradientTexture" id=20]
-gradient = SubResource( 19 )
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
 
-[sub_resource type="TileSet" id=15]
+[sub_resource type="TileSet" id=3]
 5/name = "HairPaint.png 5"
 5/texture = ExtResource( 10 )
 5/tex_offset = Vector2( 0, 0 )
@@ -121,25 +121,25 @@ gradient = SubResource( 19 )
 11/shapes = [  ]
 11/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=4]
 points = PoolVector2Array( 0, 0, 160, 0, 160, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 41.1249, 64, 41.1249, 64, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
+[sub_resource type="ConvexPolygonShape2D" id=6]
 points = PoolVector2Array( 0, 0, 96, 0, 96, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 0, 53, 96, 54, 96, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( 0, 8.02783, 128, 8.02783, 128, 64, 0, 64 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 
-[sub_resource type="TileSet" id=11]
+[sub_resource type="TileSet" id=10]
 6/name = "Cupboard1.png 6"
 6/texture = ExtResource( 5 )
 6/tex_offset = Vector2( 0, 0 )
@@ -150,14 +150,14 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 6/navigation_offset = Vector2( 0, 0 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape = SubResource( 7 )
+6/shape = SubResource( 6 )
 6/shape_one_way = false
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
@@ -171,14 +171,14 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 7/navigation_offset = Vector2( 0, 0 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape = SubResource( 8 )
+7/shape = SubResource( 7 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
@@ -192,14 +192,14 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 8/navigation_offset = Vector2( 0, 0 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-8/shape = SubResource( 9 )
+8/shape = SubResource( 8 )
 8/shape_one_way = true
 8/shape_one_way_margin = 1.0
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
@@ -213,14 +213,14 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 9/navigation_offset = Vector2( 0, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-9/shape = SubResource( 10 )
+9/shape = SubResource( 9 )
 9/shape_one_way = true
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
@@ -234,14 +234,14 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape = SubResource( 12 )
+10/shape = SubResource( 4 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 10/z_index = 0
@@ -269,40 +269,37 @@ points = PoolVector2Array( 0, 32, 64, 32, 64, 64, 0, 64 )
 12/navigation_offset = Vector2( 0, 0 )
 12/shape_offset = Vector2( 0, 0 )
 12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape = SubResource( 13 )
+12/shape = SubResource( 5 )
 12/shape_one_way = true
 12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": true,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 12/z_index = 0
 
-[sub_resource type="DynamicFont" id=21]
+[sub_resource type="DynamicFont" id=11]
 size = 40
 extra_spacing_bottom = 20
 font_data = ExtResource( 13 )
 
-[sub_resource type="SegmentShape2D" id=14]
+[sub_resource type="SegmentShape2D" id=12]
 b = Vector2( 815.971, -0.225037 )
 
-[sub_resource type="DynamicFont" id=16]
+[sub_resource type="DynamicFont" id=13]
 size = 50
 font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=17]
+[sub_resource type="DynamicFont" id=14]
 font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=22]
+[sub_resource type="DynamicFont" id=15]
 font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=18]
-font_data = ExtResource( 12 )
-
-[node name="Level-1" type="Node2D"]
+[node name="Level-2" type="Node2D"]
 script = ExtResource( 8 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
@@ -310,29 +307,28 @@ margin_top = 700.0
 margin_right = 1325.0
 margin_bottom = 1340.0
 rect_rotation = -90.0
-texture = SubResource( 20 )
+texture = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Background" type="TileMap" parent="."]
-tile_set = SubResource( 15 )
+tile_set = SubResource( 3 )
 format = 1
-tile_data = PoolIntArray( -458751, 8, 0, -393215, 9, 0, -131068, 11, 0, 65538, 7, 0, 65544, 5, 0, 131080, 6, 0, 262146, 8, 0, 327682, 10, 0, 524290, 7, 0 )
 
 [node name="Floor" type="TileMap" parent="."]
-tile_set = SubResource( 11 )
+tile_set = SubResource( 10 )
 format = 1
-tile_data = PoolIntArray( -458746, 9, 0, -393211, 9, 0, -327677, 8, 0, -262138, 9, 0, -196600, 8, 0, -131066, 9, 0, -65533, 8, 0, 65541, 8, 0, 65543, 9, 0, 131075, 9, 0, 196608, 8, 0, 196612, 9, 0, 262152, 8, 0, 327686, 9, 0, 393218, 8, 0, 458752, 9, 0, 458757, 9, 0, 524291, 12, 0, 524296, 7, 0, 589827, 11, 0, 589832, 6, 0, 655360, 10, 0, 655362, 10, 0, 655363, 10, 0, 655365, 10, 0, 655366, 10, 0, 655368, 10, 0 )
+tile_data = PoolIntArray( 655360, 8, 0, 655362, 8, 0, 655364, 8, 0, 655366, 8, 0, 655368, 8, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 38.64, 578.416 )
 
 [node name="IntroPopup" type="Popup" parent="."]
-margin_left = 127.245
-margin_top = 273.518
-margin_right = 167.245
-margin_bottom = 313.518
+margin_left = 154.597
+margin_top = 316.329
+margin_right = 194.597
+margin_bottom = 356.329
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -340,24 +336,26 @@ __meta__ = {
 [node name="IntroBackground" type="ColorRect" parent="IntroPopup"]
 margin_left = -8.0
 margin_top = -10.0
-margin_right = 402.0
-margin_bottom = 107.0
+margin_right = 343.0
+margin_bottom = 48.0
 color = Color( 0.0509804, 0.254902, 0, 1 )
 
 [node name="IntroLabel" type="Label" parent="IntroPopup"]
 margin_right = 40.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 21 )
-text = "Zombified from being stuck in quarantine?
-Jump towards the light of day!"
+custom_fonts/font = SubResource( 11 )
+text = "Watch out for falling schoolwork!!"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="WinLine" type="Area2D" parent="."]
 position = Vector2( 0, -80 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinLine"]
 position = Vector2( -70.1634, -491.142 )
-shape = SubResource( 14 )
+shape = SubResource( 12 )
 
 [node name="GameOverHUD" type="MarginContainer" parent="."]
 visible = false
@@ -376,7 +374,7 @@ margin_bottom = 97.0
 [node name="GameOverLabel" type="Label" parent="GameOverHUD/VBoxContainer"]
 margin_right = 353.0
 margin_bottom = 65.0
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 13 )
 custom_colors/font_color = Color( 0.74902, 0, 0, 1 )
 text = "GAME OVER"
 
@@ -390,14 +388,14 @@ alignment = 1
 margin_left = 52.0
 margin_right = 175.0
 margin_bottom = 28.0
-custom_fonts/font = SubResource( 17 )
+custom_fonts/font = SubResource( 14 )
 text = "Try Again"
 
 [node name="MainMenuButton" type="Button" parent="GameOverHUD/VBoxContainer/HBoxContainer"]
 margin_left = 179.0
 margin_right = 301.0
 margin_bottom = 28.0
-custom_fonts/font = SubResource( 22 )
+custom_fonts/font = SubResource( 15 )
 text = "Main Menu"
 
 [node name="WinHUD" type="MarginContainer" parent="."]
@@ -417,7 +415,7 @@ margin_bottom = 97.0
 [node name="WinLabel" type="Label" parent="WinHUD/VBoxContainer"]
 margin_right = 521.0
 margin_bottom = 65.0
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 13 )
 custom_colors/font_color = Color( 0, 0.74902, 0.027451, 1 )
 text = "LEVEL CLEARED"
 
@@ -427,13 +425,13 @@ margin_right = 521.0
 margin_bottom = 97.0
 alignment = 1
 
-[node name="NextLevelButton" type="Button" parent="WinHUD/VBoxContainer/HBoxContainer"]
-margin_left = 193.0
-margin_right = 328.0
+[node name="BacktoMainButton" type="Button" parent="WinHUD/VBoxContainer/HBoxContainer"]
+margin_left = 155.0
+margin_right = 366.0
 margin_bottom = 28.0
-custom_fonts/font = SubResource( 18 )
-text = "Next Level"
+custom_fonts/font = SubResource( 15 )
+text = "Back to Main Menu"
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
-[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/NextLevelButton" to="." method="_on_NextLevelButton_pressed"]
+[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/BacktoMainButton" to="." method="_on_MainMenuButton_pressed"]

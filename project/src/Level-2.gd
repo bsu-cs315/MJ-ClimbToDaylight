@@ -2,7 +2,6 @@ extends Node2D
 
 
 var title_screen_path := "res://project/src/TitleScreen.tscn"
-var level2_path := "res://project/src/Level-2.tscn"
 
 onready var player := $Player
 onready var win_hud := $WinHUD
@@ -50,7 +49,3 @@ func _on_RetryButton_pressed():
 
 func _on_MainMenuButton_pressed():
 	get_tree().change_scene(title_screen_path)
-
-
-func _on_NextLevelButton_pressed():
-	get_tree().change_scene(level2_path)
