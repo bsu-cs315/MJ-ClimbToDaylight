@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://project/assets/Bookshelf.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/woodTiles.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://project/assets/PathPaint.png" type="Texture" id=11]
 [ext_resource path="res://project/assets/fonts/retro_computer_personal_use.ttf" type="DynamicFontData" id=12]
 [ext_resource path="res://project/assets/fonts/CryptCreep BB_reg.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://project/src/PausePopup.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Gradient" id=19]
 offsets = PoolRealArray( 0, 0.283871, 0.580645, 0.870968 )
@@ -428,12 +429,24 @@ margin_bottom = 97.0
 alignment = 1
 
 [node name="NextLevelButton" type="Button" parent="WinHUD/VBoxContainer/HBoxContainer"]
-margin_left = 193.0
-margin_right = 328.0
+margin_left = 130.0
+margin_right = 265.0
 margin_bottom = 28.0
 custom_fonts/font = SubResource( 18 )
 text = "Next Level"
+
+[node name="MainMenuButton" type="Button" parent="WinHUD/VBoxContainer/HBoxContainer"]
+margin_left = 269.0
+margin_right = 391.0
+margin_bottom = 28.0
+custom_fonts/font = SubResource( 22 )
+text = "Main Menu"
+
+[node name="PausePopup" parent="." instance=ExtResource( 14 )]
 [connection signal="body_shape_entered" from="WinLine" to="." method="_on_WinLine_body_shape_entered"]
 [connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
-[connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="GameOverHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenu"]
 [connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/NextLevelButton" to="." method="_on_NextLevelButton_pressed"]
+[connection signal="pressed" from="WinHUD/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_MainMenu"]
+[connection signal="main_menu" from="PausePopup" to="." method="_on_MainMenu"]
+[connection signal="resume" from="PausePopup" to="." method="_on_Resume"]

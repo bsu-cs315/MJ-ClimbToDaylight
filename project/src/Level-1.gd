@@ -5,9 +5,11 @@ var title_screen_path := "res://project/src/TitleScreen.tscn"
 var level2_path := "res://project/src/Level-2.tscn"
 
 onready var player := $Player
+onready var player_cam := $Player/PlayerCam
 onready var win_hud := $WinHUD
 onready var game_over_hud := $GameOverHUD
 onready var intro_popup := $IntroPopup
+onready var pause_popup := $PausePopup
 
 
 func _ready():
@@ -37,6 +39,12 @@ func _process(_delta):
 	if player:
 		if player.position.y > player.player_cam().get_camera_screen_center().y+352:
 			kill_player()
+	
+	if Input.is_action_just_pressed("pause_game"):
+		get_tree().paused = true
+		var screen_center = player_cam.get_camera_screen_center()
+		pause_popup.set_position(Vector2(screen_center.x-218.5, screen_center.y - 96.5))
+		pause_popup.show()
 
 
 func _on_WinLine_body_shape_entered(body_id, _body, _body_shape, _area_shape):
@@ -48,9 +56,14 @@ func _on_RetryButton_pressed():
 	var _ignored = get_tree().reload_current_scene()
 
 
-func _on_MainMenuButton_pressed():
+func _on_MainMenu():
 	var _ignored = get_tree().change_scene(title_screen_path)
 
 
 func _on_NextLevelButton_pressed():
 	var _ignored = get_tree().change_scene(level2_path)
+
+
+func _on_Resume():
+	pause_popup.hide()
+	get_tree().paused = false
