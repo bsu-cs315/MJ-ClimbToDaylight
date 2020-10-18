@@ -48,4 +48,4 @@ func _on_RetryButton_pressed():
 
 
 func _on_MainMenuButton_pressed():
-	get_tree().change_scene(title_screen_path)
+	var _ignored = get_tree().change_scene(title_screen_path)
